@@ -1,0 +1,46 @@
+.home-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.nav-button-list {
+  padding-right: 40px;
+  display: inline-block;
+  color: aqua;
+  padding: 14px 16px;
+}
+
+.navbar {  
+  display: flex;
+  background-color: #ab0beb; /* Background color */  
+  overflow: hidden; /* Clear floats */ 
+  justify-content: space-between; 
+}  
+  
+/* Style for navigation bar links */  
+.navbar a {  
+  float: left; /* Float the links to the left */  
+  display: block; /* Display links as blocks */  
+  color: white; /* text color */  
+  text-align: center; /* Center-align the text */  
+  padding: 14px 16px; /* Padding around the links */  
+  text-decoration: none; /* Remove underline from links */  
+  border-radius: 10%;
+}  
+  
+/* Change color on hover */  
+.navbar a:hover {  
+  background-color: #ffffff; /* Background color on hover */  
+  color: rgb(10, 10, 10); /* Text color on hover */  
+}  
+
+.signup {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+
+  input,button {
+    margin-top: 10px;
+  }
+}
