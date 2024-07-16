@@ -2,6 +2,7 @@ import React from 'react'
 import '../index.css'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import axios from 'axios'
 
 export default function SignUp() {
     const [username, setUsername] = useState('')
@@ -11,8 +12,11 @@ export default function SignUp() {
 
     const submitHandler = (e) => {
         e.preventDefault()
-        axios.post("http://localhost:3000/", {username, email, password})
-        .then(result => navigate('/'))
+        axios.post("http://localhost:3000/createUser", {username, email, password})
+        .then(result => {
+          console.log(result);
+          navigate('/');
+        })
         .catch(err => console.log(err))
     }
   return (
